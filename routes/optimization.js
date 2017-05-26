@@ -14,8 +14,16 @@ const optimizationRoute = {
         imageFormat = info.format;
         return optimize(request.payload.image, {
           mode: request.payload.mode,
-          info: info,
+          info,
         });
+      }).catch((err) => {
+        if (err === 'INVALID_FORMAT') {
+          return reply(Boom.badRequest('Invalid image format'));
+        }
+        if (err === 'MAX_OPTIMIZE_REACHED') {
+          return Promise.resolve(request.payload.image);
+        }
+        return reply(Boom.badImplementation('Optimizing image error'));
       }).then((optimizedImage) => {
         const replying = reply(optimizedImage)
           .header('Content-Disposition', 'inline');
@@ -27,11 +35,6 @@ const optimizationRoute = {
             replying.header('Content-type', 'image/png');
         }
         return replying;
-      }).catch((err) => {
-        if (err === 'INVALID_FORMAT') {
-          return reply(Boom.badRequest('Invalid image format'));
-        }
-        return reply(Boom.badImplementation('GM error', err));
       });
   },
   config: {
