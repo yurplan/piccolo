@@ -14,3 +14,8 @@
 
 - [ ] Add tests and CI
 - [ ] Add Dockerfile
+
+## Thanks
+
+- [imagemin](https://github.com/imagemin/imagemin)
+- [hapi modules](https://github.com/hapijs)

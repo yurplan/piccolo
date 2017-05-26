@@ -14,6 +14,7 @@ const optimizationRoute = {
         imageFormat = info.format;
         return optimize(request.payload.image, {
           mode: request.payload.mode,
+          info: info,
         });
       }).then((optimizedImage) => {
         const replying = reply(optimizedImage)
