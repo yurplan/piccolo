@@ -26,8 +26,14 @@ npm run
 
 ## Todo
 
+### v1.0.0
 - [ ] Add tests and CI
-- [ ] Add Dockerfile
+- [ ] Write some documentation on a Github page
+- [x] Add Dockerfile
+- [ ] Publish the Docker image
+
+### v1.1.0
+- [ ] Add the resizing feature
 
 ## Thanks
 
