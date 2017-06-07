@@ -21,7 +21,7 @@ docker run -p 3000:3000 -it piccolo
 **Standard**
 ```
 npm install
-npm run
+npm start
 ```
 
 ## Todo
@@ -33,6 +33,7 @@ npm run
 - [ ] Publish the Docker image
 
 ### v1.1.0
+- [ ] Add configuration file
 - [ ] Add the resizing feature
 
 ## Thanks
