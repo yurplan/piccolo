@@ -7,7 +7,7 @@
     "start": "node index",
     "watch": "nodemon",
     "eslint": "eslint **/*.js",
-    "test": "npm run eslint"
+    "test": "npm run eslint && lab --assert code --coverage tests/"
   },
   "repository": {
     "type": "git",
@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/Caligone/piccolo#readme",
   "devDependencies": {
-    "code": "^4.0.0",
+    "code": "^4.1.0",
     "eslint": "^3.19.0",
     "eslint-config-airbnb-base": "^11.2.0",
     "eslint-plugin-import": "^2.3.0",
