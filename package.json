@@ -7,7 +7,7 @@
     "start": "node index",
     "watch": "nodemon",
     "eslint": "eslint **/*.js",
-    "test": "npm run eslint && lab --assert code --coverage tests/"
+    "test": "npm run eslint && lab --assert code --coverage -I __RESOLVED_TMP_DIR__ tests/"
   },
   "repository": {
     "type": "git",
