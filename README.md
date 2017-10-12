@@ -1,5 +1,10 @@
 # Piccolo
 
+[![Dependency Status](https://david-dm.org/yurplan/piccolo.svg)](https://david-dm.org/yurplan/piccolo)
+[![devDependency Status](https://david-dm.org/yurplan/piccolo/dev-status.svg)](https://david-dm.org/yurplan/piccolo#info=devDependencies)
+[![Build Status](https://travis-ci.org/yurplan/piccolo.svg?branch=master)](https://travis-ci.org/yurplan/piccolo)
+[![Coverage Status](https://coveralls.io/repos/yurplan/piccolo/badge.svg?branch=master)](https://coveralls.io/r/yurplan/piccolo?branch=master)
+
 > An image optimization API
 
 ## API Documentation
