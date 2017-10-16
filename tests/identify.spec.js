@@ -16,6 +16,14 @@ describe('Identification', () => {
       done();
     });
   });
+  it('returns error if gm failed', (done) => {
+    // eslint-disable-next-line no-underscore-dangle
+    identify.__set__('gm', () => false);
+    identify({}).catch((err) => {
+      expect(err).to.equal('UNKNOWN_ERROR');
+      done();
+    });
+  });
   it('returns error if invalid format', (done) => {
     // eslint-disable-next-line no-underscore-dangle
     identify.__set__('gm', () => ({
