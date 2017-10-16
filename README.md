@@ -12,7 +12,7 @@
 **Endpoint `/optimization`**
 
 - Body
-    - `image`: The binary image (50mo max.) **required**
+    - `image`: The binary image (50 MB max.) **required**
     - `mode`: The optimize mode (`aggressive`, `mid`, `shy`) defaults to `mid`
 
 ## Usage
