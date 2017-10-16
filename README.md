@@ -32,7 +32,7 @@ npm start
 ## Todo
 
 ### v1.0.0
-- [ ] Add tests and CI
+- [x] Add tests and CI
 - [ ] Write some documentation on a Github page
 - [x] Add Dockerfile
 - [ ] Publish the Docker image
